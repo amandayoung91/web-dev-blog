@@ -7,121 +7,164 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div class="header-container">
-        <div class="logo">
-            <img src="img/LOGO.png" alt="logo">
+<!--<header>-->
+
+    <!--&lt;!&ndash;-->
+    <!--показать меню в столбце для мобильного и по умолчанию display: none-->
+
+    <!--мобильный-->
+    <!--меню скрыто, доступна кнопка показать меню-->
+    <!--по клику на кнопку меню, появляется меню (display: block)-->
+
+    <!--показать меню в линии (флексбоксы) для десктопа и для планшета - V-->
+
+    <!--планшет-->
+    <!--меню отображается-->
+    <!--кнопка показать меню не доступна V-->
+
+    <!--десктоп-->
+    <!--меню отображается-->
+    <!--кнопка показать меню не доступна V-->
+    <!--&ndash;&gt;-->
+    <!--<div class="container header-container">-->
+        <!--<div class="logo">-->
+            <!--<img src="img/logo.png" alt="logo">-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<input type="checkbox" id="menu-checkbox">&ndash;&gt;-->
+        <!--<nav role="navigation">-->
+            <!--&lt;!&ndash;<label id="menu_show" for="menu-checkbox" class="toggle-button"&ndash;&gt;-->
+                   <!--&lt;!&ndash;data-open="MENU" data-close="CLOSE" onclick></label>&ndash;&gt;-->
+            <!--<button id="menu_show">Меню</button>-->
+            <!--<ul class="main-menu" id="main_menu_id">-->
+                <!--<li><a href="#">HOME</a></li>-->
+                <!--<li><a href="#">PORTFOLIO</a></li>-->
+                <!--<li><a href="#">BLOG</a></li>-->
+                <!--<li><a href="#">ABOUT US</a></li>-->
+                <!--<li><a href="#">CONTACT</a></li>-->
+            <!--</ul>-->
+        <!--</nav>-->
+    <!--</div>-->
+<!--</header>-->
+<section class="navBar">
+    <div class="wrapper">
+        <div class="logo-img">
+            <img src="img/logo.png" alt="logo">
         </div>
-        <input type="checkbox" id="menu-checkbox">
-        <nav role="navigation">
-            <label for="menu-checkbox" class="toggle-button"
-                   data-open="MENU" data-close="CLOSE" onclick></label>
-            <ul class="main-menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="label-toggle"></label>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
     </div>
-</header>
-<main>
-    <section class="top-slide">
-        <div class="top-container">
-            <div><h2>WE BELIEVE</h2></div>
-            <div><h2>IN QUALITY DESIGN</h2></div>
-            <div><p>Any creative project is unique</p></div>
-            <div><p>and should be provided with</p></div>
-            <div><p>the appropriate quality</p></div>
-        </div>
-    </section>
-    <section class="specialize">
-        <div class="specialize-container">
-            <h3>We create quality designs.</h3>
-            <p>We specialize in Web Design / Development and Graphic Design</p>
-            <div class="specialize-cards">
-                <div class="card first-card">
-                    <div class="top-card">
-                    </div>
-                    <div class="bottom-card">
-                        <p class="first-p">Redesigning <br> With Personality</p>
-                    </div>
+</section>
+<section class="top-slide" style="background: no-repeat url(img/slider_bg.jpg) 50% 0; background-size: cover;">
+    <div class="container top-container">
+        <div><h2>WE BELIEVE</h2></div>
+        <div><h2>IN QUALITY DESIGN</h2></div>
+        <div><p>Any creative project is unique</p></div>
+        <div><p>and should be provided with</p></div>
+        <div><p>the appropriate quality</p></div>
+    </div>
+</section>
+<section class="specialize">
+    <div class="container specialize-container">
+        <h3>We create quality designs.</h3>
+        <p>We specialize in Web Design / Development and Graphic Design</p>
+        <div class="specialize-cards">
+            <div class="card">
+                <div class="top-card">
+                    <img class="first-img" src="img/bog-post-icon.jpg" alt="">
                 </div>
-                <div class="card second-card">
-                    <div class="top-card">
-                    </div>
-                    <div class="middle-card">
-                        WEB DEVELOPMENT
-                    </div>
-                    <div class="bottom-card">
-                        <p class="first-p">Lorem ipsum dolor sit amet,<br>
-                            consectetur.</p>
-                    </div>
+                <div class="middle-card first-img">
                 </div>
-                <div class="card third-card">
-                    <div class="top-card">
-                    </div>
-                    <div class="middle-card">
-                        WEB DESIGN
-                    </div>
-                    <div class="bottom-card">
-                        <p class="first-p">Lorem ipsum dolor sit amet,<br>
-                            consectetur.</p>
-                    </div>
+                <div class="bottom-card">
+                    <p class="first-p">Redesigning <br> With Personality</p>
                 </div>
-                <div class="card fourth-card">
-                    <div class="top-card">
-                    </div>
-                    <div class="middle-card">
-                        GRAPHIC DESIGN
-                    </div>
-                    <div class="bottom-card">
-                        <p class="first-p">Lorem ipsum dolor sit amet,<br>
-                            consectetur.</p>
-                    </div>
+            </div>
+            <div class="card">
+                <div class="top-card">
+                    <img class="rest-img" src="img/web-development.png" alt="">
+                </div>
+                <div class="middle-card">
+                    WEB DEVELOPMENT
+                </div>
+                <div class="bottom-card">
+                    <p class="first-p">Lorem ipsum dolor sit amet,<br>
+                        consectetur.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="top-card">
+                    <img src="img/web-design-icon.png" alt="" class="rest-img">
+                </div>
+                <div class="middle-card">
+                    WEB DESIGN
+                </div>
+                <div class="bottom-card">
+                    <p class="first-p">Lorem ipsum dolor sit amet,<br>
+                        consectetur.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="top-card">
+                    <img src="img/graphic-design-icon.png" alt="" class="rest-img">
+                </div>
+                <div class="middle-card">
+                    GRAPHIC DESIGN
+                </div>
+                <div class="bottom-card">
+                    <p class="first-p">Lorem ipsum dolor sit amet,<br>
+                        consectetur.</p>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="portfolio">
-        <h4>OUR WORK</h4>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-        <div class="toggles" id="toggles">
-            <button data-id="showall">SHOW ALL</button>
-            <button data-id="webdev">WEB DEVELOPMENT</button>
-            <button data-id="webdesign">WEB DESIGN</button>
-            <button data-id="graphdesign">GRAPHIC DESIGN</button>
-        </div>
-        <div class="posts" id="posts">
-            <div class="post webdev"><img src="img/Portfolio-work-1.jpg"></div>
-            <div class="post webdesign"><img src="img/Portfolio-work-2.jpg"></div>
-            <div class="post graphdesign"><img src="img/Portfolio-work-3.jpg"></div>
-            <div class="post webdev"><img src="img/Portfolio-work-4.jpg"></div>
-            <div class="post webdesign"><img src="img/Portfolio-work-5.jpg"></div>
-            <div class="post webdev"><img src="img/Portfolio-work-6.jpg"></div>
-            <div class="post webdesign"><img src="img/Portfolio-work-7.jpg"></div>
-            <div class="post graphdesign"><img src="img/Portfolio-work-8.jpg"></div>
-        </div>
-    </section>
-    <section class="brand-slider">
-        <h4>OUR CLIENTS</h4>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-        <div class="owl-carousel">
-            <div><img src="img/Client-1.jpg" alt=""></div>
-            <div><img src="img/Client-2.jpg" alt=""></div>
-            <div><img src="img/Client-3.jpg" alt=""></div>
-            <div><img src="img/Client-4.jpg" alt=""></div>
-            <div><img src="img/Client-5.jpg" alt=""></div>
-            <div><img src="img/Client-6.jpg" alt=""></div>
-            <div><img src="img/Client-7.jpg" alt=""></div>
-            <div><img src="img/Client-8.jpg" alt=""></div>
-        </div>
-    </section>
-</main>
+    </div>
+</section>
+<section class="container portfolio">
+    <h4>OUR WORK</h4>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+    <div class="toggles" id="toggles">
+        <button data-id="showall">SHOW ALL</button>
+        <button data-id="webdev">WEB DEVELOPMENT</button>
+        <button data-id="webdesign">WEB DESIGN</button>
+        <button data-id="graphdesign">GRAPHIC DESIGN</button>
+    </div>
+    <div class="posts" id="posts">
+        <div class="post webdev"><img src="img/portfolio-work-1.jpg"></div>
+        <div class="post webdesign"><img src="img/portfolio-work-2.jpg"></div>
+        <div class="post graphdesign"><img src="img/portfolio-work-3.jpg"></div>
+        <div class="post webdev"><img src="img/portfolio-work-4.jpg"></div>
+        <div class="post webdesign"><img src="img/portfolio-work-5.jpg"></div>
+        <div class="post webdev"><img src="img/portfolio-work-6.jpg"></div>
+        <div class="post webdesign"><img src="img/portfolio-work-7.jpg"></div>
+        <div class="post graphdesign"><img src="img/portfolio-work-8.jpg"></div>
+    </div>
+</section>
+<section class="container brand-slider">
+    <h4>OUR CLIENTS</h4>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+    <div class="horizontal-scroll-wrapper">
+        <div><img src="img/client-1.jpg" alt=""></div>
+        <div><img src="img/client-2.jpg" alt=""></div>
+        <div><img src="img/client-3.jpg" alt=""></div>
+        <div><img src="img/client-4.jpg" alt=""></div>
+        <div><img src="img/client-5.jpg" alt=""></div>
+        <div><img src="img/client-6.jpg" alt=""></div>
+        <div><img src="img/client-7.jpg" alt=""></div>
+        <div><img src="img/client-8.jpg" alt=""></div>
+        <div><img src="img/client-8.jpg" alt=""></div>
+        <div><img src="img/client-8.jpg" alt=""></div>
+        <div><img src="img/client-8.jpg" alt=""></div>
+        <div><img src="img/client-8.jpg" alt=""></div>
+    </div>
+</section>
 <footer>
-    <div class="footer-container">
-        <div class="abous-us">
+    <div class="container footer-container">
+        <div class="footer-item about-us">
             <h4>About Us</h4>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                 sed diam nonummy nibh euismod tincidunt ut
@@ -139,16 +182,16 @@
                 <img src="img/f6.jpg" alt="">
             </div>
         </div>
-        <div class="tweets">
+        <div class="footer-item tweets">
             <h4>Latest tweets</h4>
-            <p><img src="img/Twitter-birs-icon-1.png" alt="">Check Out Dtbaker's <span>@Arduino</span> Sales
+            <p><img src="img/twitter-birs-icon-1.png" alt="">Check Out Dtbaker's <span>@Arduino</span> Sales
                 Notification <span>#System</span></p>
-            <p><img src="img/Twitter-birs-icon-1.png" alt="">Community Superstar Winner – <span>#OrganicBeeMedia</span>
+            <p><img src="img/twitter-birs-icon-1.png" alt="">Community Superstar Winner – <span>#OrganicBeeMedia</span>
             </p>
-            <p><img src="img/Twitter-birs-icon-1.png" alt="">Clean <span>#Websites</span> Designs for Your <span>#Inspiration</span>
+            <p><img src="img/twitter-birs-icon-1.png" alt="">Clean <span>#Websites</span> Designs for Your <span>#Inspiration</span>
             </p>
-            <p><img src="img/Twitter-birs-icon-1.png" alt="">Cute Online <span>#Shops</span></p>
-            <p><img src="img/Twitter-birs-icon-1.png" alt="">Download 40 vector <span>#icons</span> package for <span>#FREE</span>
+            <p><img src="img/twitter-birs-icon-1.png" alt="">Cute Online <span>#Shops</span></p>
+            <p><img src="img/twitter-birs-icon-1.png" alt="">Download 40 vector <span>#icons</span> package for <span>#FREE</span>
             </p>
             <div class="social-connect"><h4>Social Connecting</h4>
                 <p><img src="img/facebook.jpg" alt=""><img src="img/google-plus.jpg" alt=""><img
@@ -157,15 +200,15 @@
                         src="img/bloger.jpg" alt=""><img src="img/rss.jpg" alt=""><img src="img/dribbble.jpg" alt="">
                 </p></div>
         </div>
-        <div class="contacts">
+        <div class="footer-item contacts">
             <div class="contact-data"><h4>Contact info</h4>
                 <div class="item">
-                    <div class="icon icon-location"><img src="img/Adress.jpg" alt=""></div>
+                    <div class="icon icon-location"><img src="img/adress.jpg" alt=""></div>
                     Address: 12569 Saint Patrick des Prés,
                     85000 Paris, France
                 </div>
                 <div class="item">
-                    <div class="icon icon-phone"><img src="img/Phone.jpg" alt=""></div>
+                    <div class="icon icon-phone"><img src="img/phone.jpg" alt=""></div>
                     Phone: +38 045 845-45-78<br>
                     +38 045 845-45-79
                 </div>
@@ -181,7 +224,7 @@
     </div>
 </footer>
 <section class="lower-menu">
-    <div class="lower-menu-container">
+    <div class="container lower-menu-container">
         <ul class="l-menu">
             <li><a href="#">HOME</a></li>
             <li><a href="#">PORTFOLIO</a></li>

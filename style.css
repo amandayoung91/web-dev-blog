@@ -1,144 +1,233 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 * {
     padding: 0;
     margin: 0;
 }
-li {
-    list-style: none;
-    display: flex;
-}
+
 a {
     text-decoration: none;
 }
+
+/* стили для header и частично для .lower-menu-container*/
 header {
     background: #f6f6f6;
     padding: 22px 0;
 }
-.header-container{
-    width: 90%;
+
+.header-container {
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.header-container a{
+
+.header-container a {
     color: #000;
     font-size: 16px;
     margin-right: 61px;
     padding: 27px 10px 30px 9px;
 }
+
 .header-container a:hover,
-.lower-menu-container a:hover{
+.lower-menu-container a:hover {
     background: #ffea00;
 }
+
+/*nav {*/
+/*margin-top: 20px;*/
+/*}*/
+
 #menu-checkbox {
     display: none;
 }
-ul{
+
+.header-container ul {
     display: flex;
 }
-nav {
-    margin-top: 20px;
+
+.main-menu li {
+    list-style: none;
+    display: flex;
 }
+
+/*menu*/
+.navBar {
+    background: #f6f6f6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    min-width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo-img {
+    display: inline-block;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 60%;
+}
+
+.navBar ul a {
+    color: #000000;
+    text-decoration: none;
+    /*transition: all .5s ease;*/
+    padding: 10px;
+}
+
+.navBar ul a:hover {
+    background: #ffea00;
+}
+
+.navBar li {
+    display: inline-block;
+}
+
+.navBar #menu-toggle {
+    display: none;
+}
+
+.navBar .label-toggle {
+    display: none;
+}
+
+/* стили для .top-slide */
 .top-slide {
-    background: no-repeat url(img/slider_bg.jpg);
-    background-position: 50% 0;
+    margin-top: 140px;
+    display: block;
     padding-top: 123px;
     padding-bottom: 300px;
 }
+
 .top-container {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
 }
+
 .top-slide h2 {
     background: #ffea00;
     display: inline;
-    font-size: 70px;
     padding: 0 13px;
 }
+
 .top-slide :nth-child(2) {
     margin-bottom: 10px;
 }
+
 .top-slide p {
     background: #414146;
     display: inline;
     padding: 0 6px;
-    font-size: 24px;
     color: #f6f6f6;
 }
+
+/* стили для .specialize */
 .specialize-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
+
 .specialize-container h3 {
     text-transform: uppercase;
     font-size: 35px;
     margin-top: 90px;
 }
-.specialize-container p {
-    font-size: 24px;
+
+.specialize-container > p {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 24px;
 }
+
 p.first-p {
     font-size: 16px;
     color: #f6f6f6;
 }
-.top-card{
-    width: 250px;
-    height: 200px;
-}
-.middle-card{
-    width: 250px;
-    height: 35px;
-    background: #ffea00;
-    font-size: 20px;
-    padding: 5px 0;
-    margin-top: -45px;
-}
-.first-card .top-card{
-    background:  url("img/bog-post-icon.jpg") no-repeat 50% 40%;
-}
-.second-card .top-card {
-    background: #ffea00 url("img/web-development.png") no-repeat 50% 40%;
-}
-.third-card .top-card{
-     background: #ffea00 url("img/web-design-icon.png") no-repeat 50% 40%;
-}
-.fourth-card .top-card{
-    background: #ffea00 url("img/graphic-design-icon.png") no-repeat 50% 40%;
-}
-.bottom-card {
-    background: #414146;
-    position: relative;
-    top: -20px;
-}
+
 .specialize-cards {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
+
+.card {
+    margin-bottom: 20px;
+}
+
+.top-card {
+    width: 100%;
+    background: #ffea00;
+}
+
+.first-img {
+    width: 100%;
+}
+
+.middle-card {
+    width: 100%;
+    background: #ffea00;
+    font-size: 20px;
+    padding-bottom: 5px;
+
+}
+
+.bottom-card {
+    width: 100%;
+    background: #414146;
+    /*position: relative;
+    top: -20px;*/
+}
+
+.bottom-card p {
+    padding: 2px;
+}
+
+/* стили для .portfolio и частично для .brand-slider */
 .portfolio,
-.brand-slider{
-    width: 90%;
+.brand-slider {
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
+
 .portfolio h4,
-.brand-slider h4{
+.brand-slider h4 {
     background: #424147;
     padding: 9px 30px;
     font-size: 18px;
     display: inline-block;
     color: #ffea00;
     margin-bottom: 33px;
+    margin-top: 40px;
 }
+
 .portfolio p,
-.brand-slider p{
+.brand-slider p {
     font-size: 16px;
     color: #424146;
 }
+
+.toggles {
+    display: flex;
+    justify-content: center;
+}
+
 .toggles button {
     background: none;
     border: none;
@@ -147,52 +236,87 @@ p.first-p {
     font-size: 16px;
     margin: 24px 5px 34px 5px;
 }
+
 .toggles button:after {
     content: ' / ';
 }
+
 .toggles button:last-child:after {
     content: '';
 }
+
 .posts {
-    width: 90%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
+
 .post img {
-    width: 260px;
-    margin: 0 20px;
+    width: 90%;
+    margin: 0 auto;
 }
+
+/* стили для .brand-slider */
 .brand-slider {
     margin-bottom: 120px;
 }
+
 .brand-slider h4 {
     margin-top: 40px;
 }
+
 .brand-slider p {
     margin-bottom: 40px;
 }
-.owl-carousel {
+
+.horizontal-scroll-wrapper {
     display: flex;
-    justify-content: space-around;
+    margin: 0;
+    overflow-x: auto;
 }
+
+.horizontal-scroll-wrapper > div {
+    display: block;
+    padding: 5px;
+}
+
+/* стили для footer */
 footer {
     background: #414146;
     padding: 30px 60px;
     color: #ffffff;
 }
+
 .footer-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 35% 36% 21%;
-    grid-column-gap: 2%;
+    display: flex;
+    justify-content: space-between;
 }
+
+.footer-item {
+    margin: 0 15px;
+}
+
+.about-us {
+    width: 36%;
+}
+
+.tweets {
+    width: 37%;
+}
+
+.contacts {
+    width: 31%;
+}
+
 .footer-container h4 {
     margin-bottom: 10px;
     font-size: 18px;
 }
-.footer-container .abous-us a {
+
+.footer-container .about-us a {
     display: inline-block;
     background: #000000;
     color: #ffffff;
@@ -202,79 +326,118 @@ footer {
     margin-bottom: 44px;
     border-bottom: 2px solid #ffea00;
 }
+
 .images {
+    width: 100%;
+    display: flex;
     margin-top: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
-.tweets p{
+
+.images img {
+    width: 47%;
+    margin: 3px;
+}
+
+.tweets p {
     margin-bottom: 30px;
     font-size: 13px;
 }
+
 .tweets span {
     color: #ffea00;
 }
+
 .social-connect h4,
-.social-connect p{
+.social-connect p {
     display: inline-block;
 }
-.social-connect img{
+
+.social-connect img {
     margin: 0 2px 0 0;
 }
-.contacts .item{
+
+.contacts .item {
     position: relative;
     font-size: 13px;
     padding-left: 35px;
     margin-bottom: 7px;
 }
-.contacts .icon{
+
+.contacts .icon {
     position: absolute;
     top: 0;
     left: 0;
     width: 22px;
     height: 32px;
 }
+
+.contacts p {
+    font-size: 13px;
+}
+
 .item span {
     color: #ffea00;
 }
-.contact-data{
+
+.contact-data {
     margin-bottom: 48px;
 }
-.contacts p{
-    font-size: 13px;
-}
-.lower-menu{
+
+/* стили для .lower-menu */
+.lower-menu {
     background: #000;
     padding: 10px 0;
 }
-.lower-menu-container{
-    width: 90%;
-    margin: 0 auto;
+
+.l-menu li {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
 }
-.lower-menu-container a{
+
+.lower-menu-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.lower-menu-container ul {
+    display: flex;
+}
+
+.lower-menu-container a {
     color: #ffffff;
     font-size: 16px;
     margin-right: 61px;
     padding: 27px 10px 30px 9px;
 }
+
+/* адаптация
 @media screen and (max-width: 420px) {
     .header-container {
         width: 100%;
         display: flex;
         justify-content: space-around;
     }
+
     .main-menu {
         display: none;
     }
+
     .main-menu li {
         width: 100%;
         display: block;
         font-size: 12px;
     }
+
     .main-menu a {
         display: block;
         padding: 8px;
     }
+
     .toggle-button {
         text-align: center;
         display: block;
@@ -282,49 +445,987 @@ footer {
         cursor: pointer;
         color: #000;
     }
+
     .toggle-button:after {
         content: attr(data-open);
         display: block;
     }
+
     #menu-checkbox:checked + nav[role="navigation"] .main-menu {
         display: block;
     }
+
     #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
         content: attr(data-close);
     }
+
     .header-container a {
         margin-right: -85px;
     }
+
     .main-menu {
         position: relative;
         top: 30px;
         right: 85px;
     }
+
     .top-slide {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
     .top-slide h2 {
         font-size: 32px;
     }
+
     .top-slide p {
         font-size: 16px;
     }
+
     .specialize-container p {
         font-size: 16px;
     }
+
     .specialize-container h3 {
         margin-top: 10px;
     }
+
     .specialize-cards {
         display: flex;
         flex-direction: column;
     }
+
     .bottom-card {
         width: 250px;
         margin: 0 auto;
     }
+
     .posts {
         grid-template-columns: auto
+    }
+}
+*/
+@media (min-width: 300px) {
+    #menu_show {
+        display: block;
+    }
+
+    #main_menu_id {
+        display: none;
+    }
+
+    .container,
+    .wrapper {
+        max-width: 290px;
+    }
+    .wrapper {
+        display: block;
+        padding: 5px;
+    }
+    .logo-img img {
+        width: 60px;
+    }
+
+
+    .navBar ul {
+        display: block;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        background-color: #5076b0;
+    }
+
+    .navBar .label-toggle {
+        background: linear-gradient(to bottom, #5076b0 0%, #5076b0 20%,
+        transparent 20%, transparent 40%, #5076b0 40%, #5076b0 60%,
+        transparent 60%, transparent 80%, #5076b0 80%, #5076b0 100%);
+        display: block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        float: right;
+        margin-top: 18px;
+    }
+    .navBar #menu-toggle:checked ~ ul {
+        visibility: visible;
+        height: 100%;
+    }
+    .navBar ul a {
+        display: block;
+        color: #ffea00;
+        width: 100%;
+        height: 20px;
+        padding: 1em 0;
+
+    }
+    .navBar ul a:hover {
+        color: #424147;
+    }
+    .navBar li {
+        display: block;
+        border-bottom: 2px solid #ffea00;
+        text-align: center;
+    }
+    .top-slide h2 {
+        font-size: 25px;
+    }
+
+    .top-slide p {
+        font-size: 16px;
+    }
+
+    .specialize-container h3 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .specialize-container > p {
+        margin-top: 17px;
+        margin-bottom: 18px;
+        font-size: 15px;
+    }
+
+    .specialize-cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 3px;
+        margin-right: 5px;
+    }
+
+    p.first-p {
+        font-size: 12px;
+    }
+
+    .top-card {
+        width: 80%;
+        height: 140px;
+    }
+
+    img.first-img {
+        height: 175px;
+    }
+
+    img.rest-img {
+        margin: 20px 0;
+    }
+
+    .middle-card {
+        width: 80%;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .bottom-card {
+        width: 80%;
+    }
+
+    .toggles {
+        flex-wrap: wrap;
+    }
+
+    .toggles button {
+        font-size: 15px;
+        margin: 24px 4px 34px 4px;
+    }
+
+    .post {
+        width: 50%;
+    }
+
+    .images img {
+        max-width: 45%;
+        margin: 2px;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-item {
+        margin-bottom: 20px;
+    }
+
+    .about-us {
+        width: 100%;
+    }
+
+    .tweets {
+        width: 100%;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+
+    .footer-container .about-us p {
+        font-size: 13px;
+    }
+
+    .tweets p {
+        margin-bottom: 17px;
+        font-size: 13px;
+    }
+
+    .lower-menu-container ul {
+        display: block;
+    }
+
+    .lower-menu-container a {
+        font-size: 14px;
+        padding: 10px 10px 10px 9px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    #menu_show {
+        display: block;
+    }
+
+    #main_menu_id {
+        display: none;
+    }
+
+    .container,
+    .wrapper {
+        max-width: 550px;
+    }
+
+    .wrapper {
+        display: block;
+        padding: 5px;
+    }
+
+    .logo-img img {
+        width: 70px;
+    }
+
+    .navBar ul {
+        display: block;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        background-color: #5076b0;
+    }
+
+    .navBar .label-toggle {
+        background: linear-gradient(to bottom, #5076b0 0%, #5076b0 20%,
+        transparent 20%, transparent 40%, #5076b0 40%, #5076b0 60%,
+        transparent 60%, transparent 80%, #5076b0 80%, #5076b0 100%);
+        display: block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        float: right;
+        margin-top: 18px;
+    }
+
+    .navBar #menu-toggle:checked ~ ul {
+        visibility: visible;
+        height: 100%;
+    }
+
+    .navBar ul a {
+        display: block;
+        color: #ffea00;
+        width: 100%;
+        height: 20px;
+        padding: 1em 0;
+
+    }
+
+    .navBar ul a:hover {
+        color: #424147;
+    }
+    .navBar li {
+        display: block;
+        border-bottom: 2px solid #ffea00;
+        text-align: center;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    /*.main-menu li {*/
+    /*width: 100%;*/
+    /*display: block;*/
+    /*font-size: 12px;*/
+    /*}*/
+    /*.main-menu a {*/
+    /*display: block;*/
+    /*padding: 8px;*/
+    /*}*/
+    /*.toggle-button {*/
+    /*text-align: center;*/
+    /*display: block;*/
+    /*margin-top: 25px;*/
+    /*cursor: pointer;*/
+    /*color: #000;*/
+    /*}*/
+    /*.toggle-button:after {*/
+    /*content: attr(data-open);*/
+    /*display: block;*/
+    /*}*/
+    /*#menu-checkbox:checked + nav[role="navigation"] .main-menu {*/
+    /*display: block;*/
+    /*}*/
+    /*#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {*/
+    /*content: attr(data-close);*/
+    /*}*/
+    .top-slide h2 {
+        font-size: 50px;
+    }
+
+    .top-slide p {
+        font-size: 18px;
+    }
+
+    .specialize-container h3 {
+        font-size: 25px;
+        margin-top: 60px;
+    }
+
+    .specialize-container > p {
+        margin-top: 20px;
+        margin-bottom: 22px;
+        font-size: 18px;
+    }
+
+    .specialize-cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+        margin-left: 3px;
+        margin-right: 5px;
+    }
+
+    p.first-p {
+        font-size: 12px;
+    }
+
+    .top-card {
+        width: 100%;
+        height: 140px;
+    }
+
+    img.first-img {
+        height: 175px;
+    }
+
+    img.rest-img {
+        margin: 20px 0;
+    }
+
+    .middle-card {
+        width: 100%;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .bottom-card {
+        width: 100%;
+    }
+
+    .toggles {
+        flex-wrap: nowrap;
+    }
+
+    .toggles button {
+        font-size: 15px;
+        margin: 24px 4px 34px 4px;
+    }
+
+    .post {
+        width: 50%;
+    }
+
+    .images img {
+        max-width: 46%;
+        margin: 2px;
+        height: auto
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .about-us {
+        width: 43%;
+    }
+
+    .tweets {
+        width: 43%;
+    }
+
+    .contacts {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer-container .about-us p {
+        font-size: 13px;
+    }
+
+    .tweets p {
+        margin-bottom: 17px;
+        font-size: 13px;
+    }
+
+    .lower-menu-container {
+        justify-content: space-around;
+    }
+
+    .lower-menu-container ul {
+        display: flex;
+    }
+
+    .lower-menu-container a {
+        font-size: 14px;
+        margin-right: 30px;
+        padding: 20px 10px 20px 9px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    #menu_show {
+        display: none;
+    }
+
+    #main_menu_id {
+        display: flex;
+    }
+
+    .container,
+    .wrapper {
+        max-width: 750px;
+    }
+
+    .wrapper {
+        display: flex;
+        padding: 10px;
+    }
+
+    .navBar #menu-toggle {
+        display: none;
+    }
+
+    .navBar .label-toggle {
+        display: none;
+    }
+
+    .logo-img img {
+        width: 100%;
+    }
+
+    .navBar ul {
+        display: flex;
+        width: 60%;
+        height: auto;
+        visibility: visible;
+        background: none;
+    }
+    .navBar li {
+        display: inline-block;
+        border: none;
+    }
+
+    .navBar ul a {
+        color: #000000;
+        text-decoration: none;
+        padding: 10px;
+        width: auto;
+        height: auto;
+    }
+    .navBar ul a:hover {
+        color: #000000;
+    }
+    header {
+        padding: 5px 0;
+    }
+
+    .header-container a {
+        font-size: 16px;
+        margin-right: 35px;
+    }
+
+    /*nav{*/
+    /*margin-left: 40px;*/
+    /*}*/
+    .top-slide h2 {
+        font-size: 60px;
+    }
+
+    .top-slide p {
+        font-size: 20px;
+    }
+
+    .specialize-container h3 {
+        font-size: 30px;
+        margin-top: 70px;
+    }
+
+    .specialize-container > p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .specialize-cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+        margin-left: 3px;
+        margin-right: 5px;
+    }
+
+    p.first-p {
+        font-size: 12px;
+    }
+
+    .top-card {
+        width: 80%;
+        height: 140px;
+    }
+
+    img.first-img {
+        height: 175px;
+    }
+
+    img.rest-img {
+        margin: 20px 0;
+    }
+
+    .middle-card {
+        width: 80%;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .bottom-card {
+        width: 80%;
+    }
+
+    .toggles {
+        flex-wrap: nowrap;
+    }
+
+    .toggles button {
+        font-size: 16px;
+        margin: 24px 5px 34px 5px;
+    }
+
+    .post {
+        width: 50%;
+    }
+
+    .images img {
+        max-width: 47%;
+        margin: 2px;
+        height: auto
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+    }
+
+    .about-us {
+        width: 36%;
+    }
+
+    .tweets {
+        width: 37%;
+    }
+
+    .contacts {
+        width: 31%;
+        margin-top: 0;
+    }
+
+    .footer-container .about-us p {
+        font-size: 13px;
+    }
+
+    .tweets p {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .lower-menu-container {
+        justify-content: space-around;
+    }
+
+    .lower-menu-container ul {
+        display: flex;
+    }
+
+    .lower-menu-container a {
+        font-size: 16px;
+        margin-right: 61px;
+        padding: 27px 10px 30px 9px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    #menu_show {
+        display: none;
+    }
+
+    .container,
+    .wrapper {
+        max-width: 950px;
+    }
+
+    .wrapper {
+        display: flex;
+        padding: 10px;
+    }
+
+    .navBar #menu-toggle {
+        display: none;
+    }
+
+    .navBar .label-toggle {
+        display: none;
+    }
+
+    .logo-img img {
+        width: 100%;
+    }
+
+    .navBar ul {
+        display: flex;
+        width: 60%;
+        height: auto;
+        visibility: visible;
+        background: none;
+    }
+
+    .navBar li {
+        display: inline-block;
+        border: none;
+    }
+
+    .navBar ul a {
+        color: #000000;
+        text-decoration: none;
+        padding: 10px;
+        width: auto;
+        height: auto;
+    }
+    .navBar ul a:hover {
+        color: #000000;
+    }
+    header {
+        padding: 22px 0;
+    }
+
+    .header-container a {
+        font-size: 16px;
+        margin-right: 61px;
+    }
+
+    .top-slide h2 {
+        font-size: 70px;
+    }
+
+    .top-slide p {
+        font-size: 24px;
+    }
+
+    .specialize-container h3 {
+        font-size: 35px;
+        margin-top: 90px;
+    }
+
+    .specialize-container > p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .specialize-cards {
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: 25%;
+        margin-left: 3px;
+        margin-right: 5px;
+    }
+
+    p.first-p {
+        font-size: 12px;
+    }
+
+    .top-card {
+        width: 100%;
+        height: 140px;
+    }
+
+    img.first-img {
+        height: 175px;
+    }
+
+    img.rest-img {
+        margin: 25px 0;
+    }
+
+    .middle-card {
+        width: 100%;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .bottom-card {
+        width: 100%;
+    }
+
+    .toggles {
+        flex-wrap: nowrap;
+    }
+
+    .toggles button {
+        font-size: 16px;
+        margin: 24px 5px 34px 5px;
+    }
+
+    .post {
+        width: 25%;
+    }
+
+    .images img {
+        max-width: 47%;
+        margin: 3px;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+    }
+
+    .about-us {
+        width: 36%;
+    }
+
+    .tweets {
+        width: 37%;
+    }
+
+    .contacts {
+        width: 31%;
+        margin-top: 0;
+    }
+
+    .footer-container .about-us p {
+        font-size: 14px;
+    }
+
+    .tweets p {
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+
+    .lower-menu-container {
+        justify-content: space-around;
+    }
+
+    .lower-menu-container ul {
+        display: flex;
+    }
+
+    .lower-menu-container a {
+        font-size: 16px;
+        margin-right: 61px;
+        padding: 27px 10px 30px 9px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #menu_show {
+        display: none;
+    }
+
+    .container,
+    .wrapper {
+        max-width: 1100px;
+    }
+
+    .wrapper {
+        display: flex;
+        padding: 10px;
+    }
+
+    .navBar #menu-toggle {
+        display: none;
+    }
+
+    .navBar .label-toggle {
+        display: none;
+    }
+
+    .logo-img img {
+        width: 100%;
+    }
+
+    .navBar ul {
+        display: flex;
+        width: 60%;
+        height: auto;
+        visibility: visible;
+        background: none;
+    }
+
+    .navBar li {
+        display: inline-block;
+        border: none;
+    }
+
+    .navBar ul a {
+        color: #000000;
+        text-decoration: none;
+        padding: 10px;
+        width: auto;
+        height: auto;
+    }
+    .navBar ul a:hover {
+        color: #000000;
+    }
+    header {
+        padding: 22px 0;
+    }
+
+    .header-container a {
+        font-size: 16px;
+        margin-right: 61px;
+    }
+
+    .top-slide h2 {
+        font-size: 70px;
+    }
+
+    .top-slide p {
+        font-size: 24px;
+    }
+
+    .specialize-container h3 {
+        font-size: 35px;
+        margin-top: 90px;
+    }
+
+    .specialize-container > p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .specialize-cards {
+        flex-wrap: nowrap;
+
+    }
+
+    .card {
+        width: 50%;
+        margin-left: 3px;
+        margin-right: 5px;
+    }
+
+    p.first-p {
+        font-size: 15px;
+    }
+
+    .top-card {
+        width: 100%;
+        height: 170px;
+    }
+
+    img.first-img {
+        height: 210px;
+    }
+
+    img.rest-img {
+        margin: 40px 0;
+    }
+
+    .middle-card {
+        width: 100%;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .bottom-card {
+        width: 100%;
+    }
+
+    .toggles {
+        flex-wrap: nowrap;
+    }
+
+    .toggles button {
+        font-size: 16px;
+        margin: 24px 5px 34px 5px;
+    }
+
+    .post {
+        width: 23%;
+    }
+
+    .images img {
+        max-width: 47%;
+        margin: 5px;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+    }
+
+    .about-us {
+        width: 36%;
+    }
+
+    .tweets {
+        width: 37%;
+    }
+
+    .contacts {
+        width: 31%;
+        margin-top: 0;
+    }
+
+    .footer-container .about-us p {
+        font-size: 16px;
+    }
+
+    .tweets p {
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+
+    .lower-menu-container {
+        justify-content: space-around;
+    }
+
+    .lower-menu-container ul {
+        display: flex;
+    }
+
+    .lower-menu-container a {
+        font-size: 16px;
+        margin-right: 61px;
+        padding: 27px 10px 30px 9px;
     }
 }
